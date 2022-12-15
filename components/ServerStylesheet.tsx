@@ -1,20 +1,12 @@
-'use client'
-
 import React from 'react'
 import { useServerInsertedHTML } from 'next/navigation'
-import { getCssText, globalCss } from '@sfgov/react'
+import { SSRStyle, SSRStyleProps } from '@sfgov/react'
 
-export function ServerStylesheet() {
+export function ServerStylesheet(props: SSRStyleProps) {
   useServerInsertedHTML(() => {
     if (typeof window === 'undefined') {
-      return <GlobalStylesheet />
+      return <SSRStyle {...props} />
     }
   })
-
-  globalCss()
-  return <GlobalStylesheet />
-}
-
-function GlobalStylesheet () {
-  return <style id='stitches' dangerouslySetInnerHTML={{ __html: getCssText() }} />
+  return <SSRStyle {...props} />
 }
