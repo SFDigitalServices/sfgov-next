@@ -1,6 +1,6 @@
 # sf.gov front end
 
-This is the future [SF.gov] front end, built with the [SF.gov design system] and [Next.js](https://nextjs.org/).
+This is the future [SF.gov] front end, built with the [SF.gov design system] and [Next.js].
 
 ## Local development
 
@@ -11,9 +11,11 @@ This is the future [SF.gov] front end, built with the [SF.gov design system] and
 1. `npm install` to install required dependencies
 
 ### Development server
-Run `npm run dev` (or `npx next dev`) to run the Next.js development server. This should automatically open a web browser to `http://localhost:3000`, or whichever port you've specified in `$PORT`.
+
+Run `npm run dev` (or `npx next dev`) to run the [Next.js development server][next dev]. This should automatically open a web browser to `http://localhost:3000`, or whichever port you've specified in `$PORT`.
 
 ### Link to `@sfgov/react`
+
 If you're also working on the `@sfgov/react` component library, it can be helpful to  [link][npm link] the package for testing.
 
 0. Ensure that `.tool-versions` in the design system repo lists the same version of Node.js that you're running in this repo. **You won't be able to link the package if the design system is running in a different Node.js environment.**
@@ -31,3 +33,5 @@ From this point on, running `npm run build` in the React package directory shoul
 [asdf]: https://github.com/asdf-vm/asdf
 [asdf-nodejs]: https://github.com/asdf-vm/asdf-nodejs
 [npm link]: https://docs.npmjs.com/cli/v8/commands/npm-link?v=true
+[next.js]: https://nextjs.org/
+[next dev]: https://nextjs.org/docs/api-reference/cli#development
