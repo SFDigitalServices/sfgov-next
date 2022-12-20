@@ -1,13 +1,21 @@
 {
   "private": true,
+  "name": "sfgov-next",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prestart": "npm run build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "latest",
+    "@sfgov/react": "0.0.0-be677c8",
+    "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.15",
+    "@types/react": "18.0.26",
+    "typescript": "^4.9.4"
   }
 }
